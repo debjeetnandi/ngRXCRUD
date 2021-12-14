@@ -1,0 +1,6 @@
+<ul *ngFor="let emp of employeeList; let i = index;">
+    <li>{{emp.empName}} | {{emp.empDpt}} 
+        <button (click)="onEditEmpClick(i)">Edit</button>&nbsp;
+        <button (click)="onDeleteEmpClick(i)">Remove</button>
+    </li>
+</ul>
